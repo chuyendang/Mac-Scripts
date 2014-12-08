@@ -112,7 +112,7 @@ plutil -insert DidSeeCloudSetup -bool true /System/Library/User\ Template/Non_lo
 
 #Binding to AD
 ScriptLogging "Binding to Active Directory..."
-dsconfigad -add "unishanoi.org" -username "tcatech@unishanoi.org" -password "-------" -alldomains enable -mobile enable -mobileconfirm disable -preferred dc2.unishanoi.org -localhome enable -ou "OU=Macs,OU=UNIS Computers,DC=UNISHANOI,DC=ORG" -group "UNISHANOI\Domain Admins,UNISHANOI\Tech Support" -force
+dsconfigad -add "unishanoi.org" -username "" -password "" -alldomains enable -mobile enable -mobileconfirm disable -preferred dc2.unishanoi.org -localhome enable -ou "OU=Macs,OU=UNIS Computers,DC=UNISHANOI,DC=ORG" -group "UNISHANOI\Domain Admins,UNISHANOI\Tech Support" -force
 sleep 3
 
 #Add Tech support group to local admin
